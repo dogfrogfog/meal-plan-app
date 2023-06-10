@@ -2,7 +2,7 @@ import { Card } from "./ui/card";
 
 export default function Benefits() {
   return (
-    <section className="bg-yellow-200 p-12  mb-12">
+    <section id="benefits" className="bg-yellow-200 p-12  mb-12">
       <h1 className="text-4xl mb-4">Benefits Section</h1>
       <div className="grid grid-cols-4 gap-8">
         <Card className="p-8">

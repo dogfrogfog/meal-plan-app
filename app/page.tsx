@@ -6,6 +6,7 @@ import Comments from "@/components/Comments";
 import CTA from "@/components/CTA";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
+import Support from "@/components/Support";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CTA />
       <Pricing />
       <FAQ />
+      <Support />
     </main>
   );
 }

@@ -3,7 +3,10 @@ import FeedbackForm from "@/components/FeedbackForm";
 
 export default function HowItWorks() {
   return (
-    <section className="bg-gradient-to-l from-purple-500 to-pink-500 p-12 mb-12">
+    <section
+      id="feedback"
+      className="bg-gradient-to-l from-purple-500 to-pink-500 p-12 mb-12"
+    >
       <h1 className="text-4xl mb-4 text-white">Leave your comment</h1>
       <h3 className="text-xl text-white mb-4">
         Include testimonials from satisfied customers who have experienced your

@@ -2,7 +2,10 @@ import { Card } from "@/components/ui/card";
 
 export default function Pricing() {
   return (
-    <div className="text-white bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-12 mb-12">
+    <section
+      id="plans"
+      className="text-white bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-12 mb-12"
+    >
       <h1 className="text-4xl font-bold mb-4">Pricing</h1>
       <h3 className="text-xl mb-8">
         Pricing and Plans Section: Display the different pricing options and
@@ -33,6 +36,6 @@ export default function Pricing() {
           </p>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }

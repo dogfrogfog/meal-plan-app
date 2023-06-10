@@ -11,15 +11,34 @@ export const metadata = {
 };
 
 const Header = () => (
-  <header className="sticky top-0 z-40 h-16 bg-red-200">
-    <Link href="/">logo</Link>
+  <header className="sticky top-0 z-40 bg-red-200">
+    <div className="h-16 grid grid-cols-5 px-8">
+      <Link href="/">logo</Link>
+      <nav className="col-span-4 flex justify-end items-center">
+        <a className="ml-8 font-bold hover:underline" href="#benefits">
+          Benefits
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#guide">
+          Guide
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#feedback">
+          Feedback
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#cta">
+          Sign up
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#plans">
+          Plans
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#faq">
+          FAQ
+        </a>
+        <a className="ml-8 font-bold hover:underline" href="#support">
+          Support
+        </a>
+      </nav>
+    </div>
   </header>
-);
-const Footer = () => (
-  // <footer className="sticky bottom-0 z-40 h-16 bg-red-200">
-  <footer className="h-16 bg-red-200">
-    <Link href="/">footer</Link>
-  </footer>
 );
 
 export default function RootLayout({
@@ -31,10 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="container border-2 border-black relative py-8">
-          {children}
-        </main>
-        <Footer />
+        <main className="container">{children}</main>
         <Toaster />
       </body>
     </html>

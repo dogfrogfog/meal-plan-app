@@ -2,7 +2,10 @@ import { Card } from "./ui/card";
 
 export default function HowItWorks() {
   return (
-    <section className="bg-gradient-to-r from-purple-500 to-pink-500 p-12 mb-12">
+    <section
+      id="guide"
+      className="bg-gradient-to-r from-purple-500 to-pink-500 p-12 mb-12"
+    >
       <h1 className="text-4xl mb-4 text-white">How It Works Section</h1>
       <div className="grid grid-cols-5 gap-8">
         <Card className="p-8">

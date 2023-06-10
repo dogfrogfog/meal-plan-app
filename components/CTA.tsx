@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CTA() {
   return (
-    <section className="bg-slate-200 p-12 mb-12">
+    <section id="cta" className="bg-slate-200 p-12 mb-12">
       <h1 className="text-4xl font-bold  mb-4">Call-to-Action Section:</h1>
       <h3 className="mb-8">
         Include testimonials from satisfied customers who have experienced your

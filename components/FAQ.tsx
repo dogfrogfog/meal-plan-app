@@ -7,7 +7,10 @@ import {
 
 export default function FAQ() {
   return (
-    <div className="text-white bg-gradient-to-l from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-12 mb-12">
+    <div
+      id="faq"
+      className="text-white bg-gradient-to-l from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-12 mb-12"
+    >
       <h1 className="text-4xl font-bold mb-4">FAQ</h1>
       <h3 className="text-xl mb-8">
         FAQ Section: Address frequently asked questions and provide clear and
