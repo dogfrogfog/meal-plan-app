@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Link from "next/link";
+import Toaster from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,9 +11,15 @@ export const metadata = {
 };
 
 const Header = () => (
-  <header>
-    <h1>header stuff</h1>
+  <header className="sticky top-0 z-40 h-16 bg-red-200">
+    <Link href="/">logo</Link>
   </header>
+);
+const Footer = () => (
+  // <footer className="sticky bottom-0 z-40 h-16 bg-red-200">
+  <footer className="h-16 bg-red-200">
+    <Link href="/">footer</Link>
+  </footer>
 );
 
 export default function RootLayout({
@@ -23,7 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="container border-2 border-black relative py-8">
+          {children}
+        </main>
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );
