@@ -36,6 +36,9 @@ const Header = () => (
         <a className="ml-8 font-bold hover:underline" href="#support">
           Support
         </a>
+        <span className="ml-8 font-bold opacity-30 cursor-not-allowed">
+          Profile/Dashboard
+        </span>
       </nav>
     </div>
   </header>
